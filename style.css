@@ -1,0 +1,162 @@
+
+/* === Reset === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* === Card container === */
+.card {
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px #8A2BE2, 0 0 40px #00FFFF30;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* === Empresa title === */
+.empresa {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  color: #8A2BE2;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #8A2BE2;
+}
+
+/* === Perfil === */
+.perfil {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00FFFF;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px #00FFFF;
+}
+
+/* === Nombre y cargo === */
+.nombre, .cargo {
+  font-family: 'Orbitron', sans-serif;
+  color: #f9f8fa;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+/* === Botones normales === */
+.botones .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 250px;
+  margin: 10px auto;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Icono dentro del botón */
+.btn i {
+  font-size: 50px;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+/* Colores individuales */
+.btn-wsp {
+  background-color: #00FFFF;
+  color: #000;
+  box-shadow: 0 0 10px #00FFFF;
+}
+
+.btn-web {
+  background-color: #8A2BE2;
+  color: #fff;
+  box-shadow: 0 0 10px #8A2BE2;
+}
+
+/* === Separador === */
+.separador {
+  margin: 25px 0 15px;
+  height: 2px;
+  background: linear-gradient(to right, #007CFF, #8A2BE2, #7FFFD4);
+  border-radius: 4px;
+}
+
+/* === Botón dividido === */
+.boton-doble {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-mitad {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 0;
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.btn-fb {
+  background-color: #007CFF;
+  color: #fff;
+  box-shadow: 0 0 10px #007CFF;
+}
+
+.btn-ig {
+  background-color: #7FFFD4;
+  color: #000;
+  box-shadow: 0 0 10px #7FFFD4;
+}
+
+/* === Hover === */
+.btn:hover,
+.btn-mitad:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .empresa {
+    font-size: 22px;
+  }
+  .perfil {
+    width: 100px;
+    height: 100px;
+  }
+  .botones .btn,
+  .btn-mitad {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .btn i {
+    font-size: 16px;
+  }
+}
